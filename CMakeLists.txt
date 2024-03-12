@@ -7,9 +7,9 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED True)
 
 #compile options, enable warnings, 0 optimization
-add_compile_options(-Wall -Wextra -pedantic -O0)
+add_compile_options(-Wall -Wextra -pedantic)
 
 add_subdirectory(./code)
 
 #pending to add exec
-add_executable(cmake_example_exec cmake.c)
+#add_executable(cmake_example_exec pointer_swap.c)
