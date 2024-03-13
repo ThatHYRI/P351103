@@ -6,6 +6,16 @@
 #include ""
 #include ""
 
+//extra define
+//#define
+//#define
+
+typedef struct {
+    //
+    //
+    //
+}
+
 
 
 
