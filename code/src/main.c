@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 //include other headers
-#include "developer.h"
+//#include "developer.h"
 //#include 
 //#include 
 
