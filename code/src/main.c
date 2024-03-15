@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 //include other headers
-//#include "developer.h"
+#include "developer.h"
 //#include 
 //#include 
 
@@ -30,7 +30,6 @@ int main() {
         printf("       EXIT             [4]       \n");
         printf("==================================\n");
 
-        srand(time(NULL));  //do the funny
         printf("Enter selection: ");
         scanf("%s", input1);
         act = strtol(input1, &ptr, 10);
@@ -49,13 +48,8 @@ int main() {
                 continue_loop = 0;
                 break;
             default:
-                if (rand() % 100 < 5) {
-                    printf("Can you read?");
-                }
-                else {
-                    printf("Invalid Input, try again.");
-                }
-                break;
+                printf("Invalid Input, try again.\n");
+                break; 
         }
     }
 }
