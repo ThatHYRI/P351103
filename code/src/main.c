@@ -3,7 +3,7 @@
 #include <string.h>
 
 //include other headers
-#include "developer.h"
+#include "developer_group.h"
 //#include 
 //#include 
 
@@ -18,7 +18,10 @@ int main(void) {
     long act = 0;
     int continue_loop = 1;   //loop for menu, 0=end
 
-    //#if & #endif
+    developer Matthies;
+    developer_init(&Matthies, "Matthies Otten", "XAZDI1");
+    developer Hainam;
+    developer_init(&Hainam, "Hai Nam Nguyen", "ThatHYRI");
 
 
     while(continue_loop) {

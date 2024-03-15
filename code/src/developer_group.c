@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 //ZF OPEL Logo
-void print_grouplogo() {
+void printlogo() {
     printf("                                                                      \n");
     printf("          oooooooo                           oooooooo                 \n");
     printf("      oo            oo                   oo            oo             \n");
