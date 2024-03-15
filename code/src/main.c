@@ -41,7 +41,7 @@ int main(void) {
         //switch case for options
         switch (act) {
             case 1:
-                //devlist
+                //developer list
                 printf("1 IS PRESSED\n");
                 print_developer(&Matthies);
                 print_developer(&Hainam);
