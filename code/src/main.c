@@ -3,9 +3,10 @@
 #include <string.h>
 
 //include other headers
+#include "developer_group.h"
 #include "developer.h"
-//#include 
-//#include 
+#include "developer.c"
+#include "developer_group.c"
 
 int main(void) {
 
@@ -18,7 +19,11 @@ int main(void) {
     long act = 0;
     int continue_loop = 1;   //loop for menu, 0=end
 
-    //#if & #endif
+    //initialize names
+    developer Matthies;
+    developer_init(&Matthies, "Matthies Otten", "XAZDI1");
+    developer Hainam;
+    developer_init(&Hainam, "Hai Nam Nguyen", "ThatHYRI");
 
 
     while(continue_loop) {
@@ -37,16 +42,20 @@ int main(void) {
         //switch case for options
         switch (act) {
             case 1:
-                //devlist
+                //developer list
                 printf("1 IS PRESSED\n");
+                print_developer(&Matthies);
+                print_developer(&Hainam);
                 break;
             case 2:
                 //logo
                 printf("2 IS PRESSED\n");
+                print_logo();
                 break;
             case 3:
                 //logo&dev
                 printf("3 IS PRESSED\n");
+                print_group(&Matthies, &Hainam);
                 break;
             case 4:
                 //end exe
