@@ -3,25 +3,25 @@
 
 #include "developer.h"
 
-void printdev(developer const *devptr) {
+void print_dev(developer const *dev_ptr) {
     printf("------------------------------\n");
     printf("==============================\n");
     printf("DEVELOPER:\n");
-    printf("Name: %s\n", devptr->dev_name);
-    printf("Alias: %s\n", devptr->dev_alias);
+    printf("Name: %s\n", dev_ptr->dev_name);
+    printf("Alias: %s\n", dev_ptr->dev_alias);
     printf("==============================\n");
     printf("------------------------------\n");
 }
 
-void developer_init(developer *devptr, const char dev_name[DEV_NAME_LENGTH], const char alias_name[DEV_ALIAS_LENGTH]) {
-    if (devptr == NULL) {
+void developer_init(developer *dev_ptr, const char dev_name[DEV_NAME_LENGTH], const char dev_alias[DEV_ALIAS_LENGTH]) {
+    if (dev_ptr == NULL) {
         printf("INVALID DEV DATA PRINT");
     }
     else {
         //ptrdev points on name&alias
-        strncpy(devptr->dev_name, dev_name, DEV_NAME_LENGTH-1);
-        devptr->dev_name[DEV_NAME_LENGTH - 1] = '\0';  //null termination
-        strncpy(devptr->dev_name, dev_name, DEV_ALIAS_LENGTH-1);
-        devptr->dev_name[DEV_ALIAS_LENGTH - 1] = '\0';
+        strncpy(dev_ptr->dev_name, dev_name, DEV_NAME_LENGTH-1);
+        dev_ptr->dev_name[DEV_NAME_LENGTH - 1] = '\0';  //null termination
+        strncpy(dev_ptr->dev_alias, dev_alias, DEV_ALIAS_LENGTH-1);
+        dev_ptr->dev_alias[DEV_ALIAS_LENGTH - 1] = '\0';
     }
 } 

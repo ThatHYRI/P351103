@@ -1,8 +1,9 @@
 #include "developer_group.h"
+#include "developer.c"
 #include <stdio.h>
 
-//ZF OPEL Logo
-void printlogo() {
+//ZF OPEL Logo, Function2
+void print_logo(void) {
     printf("                                                                      \n");
     printf("          oooooooo                           oooooooo                 \n");
     printf("      oo            oo                   oo            oo             \n");
@@ -19,8 +20,9 @@ void printlogo() {
 }
 
 
-//placeholder main
-int main() {
-    print_devlog();
-    return 35;
+//print logo and developers, Function3
+void print_group(developer const *dev_ptr1, developer const *dev_ptr2) {
+    print_logo();
+    print_developer(dev_ptr1);
+    print_developer(dev_ptr2);
 }

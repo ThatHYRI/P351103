@@ -1,5 +1,7 @@
-#ifndef DEVELOPER_H_CXRJSJD88W
-#define DEVELOPER_H_CXRJSJD88W
+//#ifndef DEVELOPER_H_CXRJSJD88W
+//#define DEVELOPER_H_CXRJSJD88W
+#ifndef DEVELOPER_H
+#define DEVELOPER_H
 
 #define DEV_NAME_LENGTH (40U)
 #define DEV_ALIAS_LENGTH (40U)
@@ -17,9 +19,9 @@ typedef struct {
 } developer;
 
 //initialize developers
-void developer_init(developer *devptr, const char *dev_name, const char *alias_name);
+void developer_init(developer *dev_ptr, const char *dev_name, const char *alias_name);
 
 //declaration to print developers
-void printdev(developer const *devptr);
+void print_dev(developer const *dev_ptr);
 
 #endif //DEVELOPER_H_CXRJSJD88W
