@@ -1,3 +1,6 @@
+#ifndef DEVELOPER_C
+#define DEVELOPER_C
+
 #include <stdio.h>
 #include <string.h>
 
@@ -13,7 +16,7 @@ void print_developer(developer const *dev_ptr) {
     printf("------------------------------\n");
 }
 
-void developer_init(developer *dev_ptr, const char dev_name[DEV_NAME_LENGTH], const char dev_alias[DEV_ALIAS_LENGTH]) {
+void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], const char *dev_alias[DEV_ALIAS_LENGTH]) {
     if (dev_ptr == NULL) {
         printf("INVALID DEV DATA PRINT");
     }
@@ -25,3 +28,5 @@ void developer_init(developer *dev_ptr, const char dev_name[DEV_NAME_LENGTH], co
         dev_ptr->dev_alias[DEV_ALIAS_LENGTH - 1] = '\0';
     }
 } 
+
+#endif DEVELOPER_C

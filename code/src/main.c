@@ -4,8 +4,9 @@
 
 //include other headers
 #include "developer_group.h"
-//#include 
-//#include 
+#include "developer.h"
+#include "developer.c"
+#include "developer_group.c"
 
 int main(void) {
 

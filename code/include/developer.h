@@ -19,9 +19,9 @@ typedef struct {
 } developer;
 
 //initialize developers
-void developer_init(developer *dev_ptr, const char *dev_name, const char *alias_name);
+void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], const char *alias_name[DEV_ALIAS_LENGTH]);
 
 //declaration to print developers
 void print_developer(developer const *dev_ptr);
 
-#endif //DEVELOPER_H_CXRJSJD88W
+#endif DEVELOPER_H
