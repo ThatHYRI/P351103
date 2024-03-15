@@ -1,21 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 //include other headers
 #include "developer.h"
 //#include 
 //#include 
 
-int main() {
+int main(void) {
 
     //placeholder
     //placeholder
-
-    long act = 0;
 
     char *ptr = NULL;  //ptr on standby
     char input1[10];
 
+    long act = 0;
     int continue_loop = 1;   //loop for menu, 0=end
 
     //#if & #endif
@@ -34,14 +34,19 @@ int main() {
         scanf("%s", input1);
         act = strtol(input1, &ptr, 10);
 
+        //switch case for options
         switch (act) {
             case 1:
-                list_devs();
+                //devlist
+                printf("1 IS PRESSED\n");
+                break;
             case 2:
                 //logo
+                printf("2 IS PRESSED\n");
                 break;
             case 3:
                 //logo&dev
+                printf("3 IS PRESSED\n");
                 break;
             case 4:
                 //end exe
