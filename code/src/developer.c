@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-void developer_print(developer const *const dpr) {
+/*void developer_print(developer const *const dpr) {
     if (dpr == NULL) {
         printf("INVALID DEV DATA PRINT");
     }
@@ -23,4 +23,4 @@ void developer_print(developer const *const dpr) {
         printf("------------------------------\n");
     }
 
-}
+} */
