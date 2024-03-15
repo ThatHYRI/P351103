@@ -3,7 +3,7 @@
 
 #include "developer.h"
 
-void print_dev(developer const *dev_ptr) {
+void print_developer(developer const *dev_ptr) {
     printf("------------------------------\n");
     printf("==============================\n");
     printf("DEVELOPER:\n");

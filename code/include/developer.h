@@ -7,7 +7,7 @@
 #define DEV_ALIAS_LENGTH (40U)
 
 //include needed?
-#include <stdbool.h>
+//#include <stdbool.h>
 
 //#include "developer_group.h"
 //#include ""
@@ -22,6 +22,6 @@ typedef struct {
 void developer_init(developer *dev_ptr, const char *dev_name, const char *alias_name);
 
 //declaration to print developers
-void print_dev(developer const *dev_ptr);
+void print_developer(developer const *dev_ptr);
 
 #endif //DEVELOPER_H_CXRJSJD88W

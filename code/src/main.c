@@ -18,6 +18,7 @@ int main(void) {
     long act = 0;
     int continue_loop = 1;   //loop for menu, 0=end
 
+    //initialize names
     developer Matthies;
     developer_init(&Matthies, "Matthies Otten", "XAZDI1");
     developer Hainam;
@@ -42,14 +43,18 @@ int main(void) {
             case 1:
                 //devlist
                 printf("1 IS PRESSED\n");
+                print_developer(&Matthies);
+                print_developer(&Hainam);
                 break;
             case 2:
                 //logo
                 printf("2 IS PRESSED\n");
+                print_logo();
                 break;
             case 3:
                 //logo&dev
                 printf("3 IS PRESSED\n");
+                print_group(&Matthies, &Hainam);
                 break;
             case 4:
                 //end exe

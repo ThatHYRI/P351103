@@ -6,11 +6,6 @@
 void print_logo(void);
 
 //declaration to print developers
-void print_dev(developer const *dev_ptr1, developer const *dev_ptr2);
-
-
-
-
-
+void print_developer(developer const *dev_ptr1, developer const *dev_ptr2);
 
 #endif //DEVELOPER_GROUP_H_AOJ1VSQYCI
