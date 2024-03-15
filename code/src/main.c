@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 //include other headers
-#include "developer.h"
+//#include "developer.h"
 //#include 
 //#include 
 
@@ -36,12 +36,16 @@ int main() {
 
         switch (act) {
             case 1:
-                list_devs();
+                //devlist
+                printf("1 IS PRESSED\n");
+                break;
             case 2:
                 //logo
+                printf("2 IS PRESSED\n");
                 break;
             case 3:
                 //logo&dev
+                printf("3 IS PRESSED\n");
                 break;
             case 4:
                 //end exe
