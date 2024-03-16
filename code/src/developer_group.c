@@ -2,7 +2,7 @@
 #include "developer.c"
 #include <stdio.h>
 
-//ZF OPEL Logo, Function2
+//print ZF & OPEL Logo, Function2
 void print_logo(void) {
     printf("                                                                      \n");
     printf("          oooooooo                           oooooooo                 \n");

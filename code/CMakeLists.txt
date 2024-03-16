@@ -11,7 +11,8 @@ set(CMAKE_C_STANDARD_REQUIRED True)
 add_compile_options(-Wall -Wextra -pedantic)
 
 #add library for functions 
-add_library(libfun STATIC src/developer.c src/developer_group.c)
+add_library(libfun STATIC src/developer.c 
+                          src/developer_group.c)
 target_include_directories(libfun PUBLIC include) 
 
 #executable & assigned files

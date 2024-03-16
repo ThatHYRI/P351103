@@ -10,9 +10,6 @@
 
 int main(void) {
 
-    //placeholder
-    //placeholder
-
     char *ptr = NULL;  //ptr on standby
     char input1[10];
 
