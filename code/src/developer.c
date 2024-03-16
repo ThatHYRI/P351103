@@ -7,6 +7,7 @@
 #include "developer.h"
 
 void print_developer(developer const *dev_ptr) {
+    printf("                              \n");
     printf("------------------------------\n");
     printf("==============================\n");
     printf("DEVELOPER:\n");
@@ -14,6 +15,7 @@ void print_developer(developer const *dev_ptr) {
     printf("Alias: %s\n", dev_ptr->dev_alias);
     printf("==============================\n");
     printf("------------------------------\n");
+    printf("                              \n");
 }
 
 void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], const char *dev_alias[DEV_ALIAS_LENGTH]) {
@@ -29,4 +31,4 @@ void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], c
     }
 } 
 
-#endif DEVELOPER_C
+#endif //DEVELOPER_C    
