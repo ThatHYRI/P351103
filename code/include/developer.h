@@ -15,4 +15,5 @@ void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], c
 //declaration to print developers
 void print_developer(developer const *dev_ptr);
 
-#endif //DEVELOPER_H_CXRJSJD88W  
+#endif //DEVELOPER_H_CXRJSJD88W
+

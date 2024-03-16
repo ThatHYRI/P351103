@@ -9,3 +9,4 @@ void print_logo(void);
 void print_group(developer const *dev_ptr1, developer const *dev_ptr2);
 
 #endif //DEVELOPER_GROUP_H_AOJ1VSQYCI
+

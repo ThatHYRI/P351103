@@ -26,3 +26,5 @@ void print_group(developer const *dev_ptr1, developer const *dev_ptr2) {
     print_developer(dev_ptr1);
     print_developer(dev_ptr2);
 }
+
+

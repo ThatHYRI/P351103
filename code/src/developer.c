@@ -34,3 +34,4 @@ void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], c
 } 
 
 #endif //DEVELOPER_C  
+
