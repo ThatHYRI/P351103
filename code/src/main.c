@@ -17,7 +17,7 @@ int main(void) {
     char input1[10];
 
     long act = 0;
-    int continue_loop = 1;   //loop for menu, 0=end
+    int loop = 1;   //loop for menu, 0=end
 
     //initialize names
     developer Matthies;
@@ -26,7 +26,7 @@ int main(void) {
     developer_init(&Hainam, "Hai Nam Nguyen", "ThatHYRI");
 
 
-    while(continue_loop) {
+    while(loop) {
         printf("==================================\n");
         printf("      [ CHOOSE YOUR ACTION ]      \n");
         printf("       List Developers  [1]       \n");
@@ -43,23 +43,20 @@ int main(void) {
         switch (act) {
             case 1:
                 //developer list
-                printf("1 IS PRESSED\n");
                 print_developer(&Matthies);
                 print_developer(&Hainam);
                 break;
             case 2:
                 //logo
-                printf("2 IS PRESSED\n");
                 print_logo();
                 break;
             case 3:
                 //logo&dev
-                printf("3 IS PRESSED\n");
                 print_group(&Matthies, &Hainam);
                 break;
             case 4:
                 //end exe
-                continue_loop = 0;
+                loop = 0;
                 break;
             default:
                 printf("Invalid Input, try again.\n");
