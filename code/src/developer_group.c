@@ -20,7 +20,7 @@ void print_logo(void) {
 }
 
 
-//print logo and developers, Function3
+//print logo and developers, contains other functions, Function3
 void print_group(developer const *dev_ptr1, developer const *dev_ptr2) {
     print_logo();
     print_developer(dev_ptr1);

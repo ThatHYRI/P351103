@@ -22,7 +22,7 @@ int main(void) {
     developer Hainam;
     developer_init(&Hainam, "Hai Nam Nguyen", "ThatHYRI");
 
-
+    //print menu gui
     while(loop) {
         printf("==================================\n");
         printf("      [ CHOOSE YOUR ACTION ]      \n");
@@ -33,7 +33,9 @@ int main(void) {
         printf("==================================\n");
 
         printf("Enter selection: ");
+        //scan user input
         scanf("%s", input1);
+        //convert string to long for switch case
         act = strtol(input1, &ptr, 10);
 
         //switch case for options
@@ -48,7 +50,7 @@ int main(void) {
                 print_logo();
                 break;
             case 3:
-                //logo&dev
+                //logo & dev list
                 print_group(&Matthies, &Hainam);
                 break;
             case 4:
