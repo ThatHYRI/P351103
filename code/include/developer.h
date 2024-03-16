@@ -1,7 +1,7 @@
-//#ifndef DEVELOPER_H_CXRJSJD88W
-//#define DEVELOPER_H_CXRJSJD88W
-#ifndef DEVELOPER_H
-#define DEVELOPER_H
+#ifndef DEVELOPER_H_CXRJSJD88W
+#define DEVELOPER_H_CXRJSJD88W
+//#ifndef DEVELOPER_H
+//#define DEVELOPER_H
 
 #define DEV_NAME_LENGTH (40U)
 #define DEV_ALIAS_LENGTH (40U)
@@ -24,4 +24,4 @@ void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], c
 //declaration to print developers
 void print_developer(developer const *dev_ptr);
 
-#endif DEVELOPER_H
+#endif //DEVELOPER_H_CXRJSJD88W     
