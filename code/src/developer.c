@@ -19,14 +19,14 @@ void print_developer(developer const *dev_ptr) {
     printf("                              \n");
 }
 
-void developer_init(developer *dev_ptr, const char *dev_name[DEV_NAME_LENGTH], const char *dev_alias[DEV_ALIAS_LENGTH]) {
+void developer_init(developer *dev_ptr, char *dev_name, char *dev_alias) {
     //checking on dev_ptr
     if (dev_ptr == NULL) {
         printf("INVALID DEVELOPER DATA PRINT");
     }
     else {
         //ptr_dev points on name&alias
-        strncpy(dev_ptr->dev_name, dev_name, DEV_NAME_LENGTH-1);
+        strncpy(dev_ptr->dev_name,  dev_name, DEV_NAME_LENGTH-1);
         dev_ptr->dev_name[DEV_NAME_LENGTH - 1] = '\0';   //null termination
         strncpy(dev_ptr->dev_alias, dev_alias, DEV_ALIAS_LENGTH-1);
         dev_ptr->dev_alias[DEV_ALIAS_LENGTH - 1] = '\0';
